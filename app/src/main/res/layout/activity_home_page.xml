@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    tools:context=".User.home_page.HomePageActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/child_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/icon_drawer"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    app:icon="@drawable/menu_icon"
+                    app:iconGravity="textStart"
+                    android:layout_marginEnd="16dp"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="الميكانيكى القريب منك"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/janna_lt_bold"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginEnd="64dp"
+                    android:layout_toStartOf="@id/icon_drawer"
+                    android:layout_toEndOf="@id/icon_2"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/icon_2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    app:icon="@drawable/menu_icon"
+                    app:iconGravity="textStart"
+                    android:layout_marginStart="16dp"
+                    android:layout_alignParentStart="true"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="328dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/layout1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/shape_search"
+
+                >
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/icon_5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    app:iconGravity="textStart"
+                    app:icon="@drawable/funnel_icon"
+                    android:layout_marginStart="12dp"
+                    android:clickable="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableEnd="@drawable/search_icon"
+                    android:background="@color/background_color_box"
+                    android:hint="ما الذى تبحث عنه؟"
+                    android:fontFamily="@font/janna_lt_bold"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_toEndOf="@id/icon_5">
+
+                </EditText>
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/child_layout"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="328dp"
+            android:layout_height="match_parent"
+            tools:itemCount="10"
+            android:layout_centerInParent="true"
+            tools:listitem="@layout/item_mechanic_home"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

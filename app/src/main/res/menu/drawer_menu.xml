@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="end"
+    android:layoutDirection="rtl"
+    android:layout_gravity="end"
+    android:fontFamily="@font/janna_lt_regular"
+    tools:showIn="navigation_view"
+    >
+
+    <group   android:checkableBehavior="single"
+        android:gravity="end"
+        android:layoutDirection="ltr"
+        android:layout_gravity="end"
+        >
+        <item
+            android:id="@+id/profile_mechanic_fragment"
+            android:title="الحساب الشخصى"
+            android:icon="@drawable/icon_profile"
+            android:gravity="end"
+            android:layout_gravity="end"
+            />
+        <item
+            android:id="@+id/current_requests_mechanic_fragment"
+            android:title="الطلبات الحالية"
+            android:icon="@drawable/icon_current"
+            />
+        <item
+            android:id="@+id/waiting_requests_mechanic_fragment"
+            android:title="طلبات فى انتظار الموافقة"
+            android:icon="@drawable/icon_waiting"
+            />
+        <item
+            android:id="@+id/done_requests_mechanic_fragment"
+            android:title="طلبات سابقة تمت"
+            android:icon="@drawable/icon_done"
+            />
+        <item
+            android:id="@+id/settings_mechanic_fragment"
+            android:icon="@drawable/icon_setting"
+            android:title="الاعدادات"
+        />
+        <item
+            android:id="@+id/logput"
+            android:title="تسجيل الخروج"
+            android:icon="@drawable/icon_logout"
+            />
+
+    </group>
+</menu>

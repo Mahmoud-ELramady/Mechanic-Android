@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="172dp"
+    android:gravity="bottom"
+    android:layoutDirection="rtl"
+    android:layout_alignParentBottom="true"
+    >
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/mechanic_item"
+
+      />
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/back_header"
+
+      />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="bottom"
+      android:layout_alignParentBottom="true"
+      android:layoutDirection="rtl"
+      android:padding="16dp"
+      >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/header_iv_mechanic"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/funnel_icon"
+        />
+
+    <TextView
+        android:id="@+id/header_name_mechanic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="ورشة السلام للباشمهندس العربي"
+        android:fontFamily="@font/janna_lt_bold"
+        android:textColor="@color/primary_color"
+        android:textSize="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/header_email_mechanic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alaraby1999@gmail.com"
+        android:fontFamily="@font/janna_lt_regular"
+        android:textColor="@color/primary_color"
+        android:textSize="14dp"
+        />
+
+
+  </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    android:background="#07101010"
+    tools:context=".User.fragment_requests.CurrentRequestsFragment"
+    >
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="الميكانيكى في انتظارك في الورشة"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="@drawable/tv_shape"
+        android:textColor="@color/text_color_price"
+        android:layout_gravity="center"
+        android:fontFamily="@font/janna_lt_bold"
+        android:layout_marginBottom="12dp"
+        />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_requests"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center|bottom"
+
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/call_requests"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/background_color_box"
+            app:icon="@drawable/call_icon"
+            app:iconTint="#23A24D"
+            android:layout_marginEnd="8dp"
+
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reserve_mechanic_details"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:backgroundTint="@color/button_color_blue"
+            android:fontFamily="@font/janna_lt_bold"
+            android:text="تأكيد انتهاء الخدمة بنجاح"
+            android:textColor="@color/text_color_white"
+            android:textSize="16dp"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mechanic</string>
+    <string name="tab_text_1">طلبى الحالى</string>
+    <string name="tab_text_2">الطلبات السابقه</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_text_3">الحجز فى المكان</string>
+    <string name="tab_text_4">الحجز فى الورشة</string>
+
+
+
+    <string name="register"><u>سجل الآن</u>.</string>
+
+
+</resources>

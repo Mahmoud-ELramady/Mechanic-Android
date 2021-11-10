@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".User.requests.RequestsActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_requests"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layoutDirection="rtl"
+            >
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/icon_back_requests"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:iconGravity="textStart"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                app:icon="@drawable/back_icon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="طلباتى"
+                android:fontFamily="@font/janna_lt_bold"
+                android:backgroundTint="@color/text_color_white"
+                android:gravity="center"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/primary_color"
+                android:textSize="20sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_requests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/primary_color"
+        app:tabTextAppearance="@style/RobotoTextViewStyle"
+        app:tabIndicatorHeight="1dp"
+        app:tabIndicatorColor="@color/button_color_blue"
+
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_requests"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

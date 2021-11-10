@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="328dp"
+    android:layout_height="331dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="7dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حجز الخدمه فى ورشة الميكانيكى"
+            android:fontFamily="@font/janna_lt_bold"
+            android:textSize="15dp"
+            android:textColor="@color/primary_color"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="هل متأكد من انك تريد حجز الخدمة واصلاحها
+فى ورشة الميكانيكى ؟"
+            android:gravity="center"
+
+            android:fontFamily="@font/janna_lt_bold"
+            android:textSize="15dp"
+            android:textColor="#A6032B43"
+            android:layout_gravity="center"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundColor="@color/background_color_box"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="( مهم ) اكتب المشكلة او العطل هنا"
+                android:fontFamily="@font/janna_lt_regular"
+                android:gravity="top"
+                android:textSize="15dp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/reserve_stay_details"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/text_color_white"
+                android:fontFamily="@font/janna_lt_bold"
+                android:text="لا، الغاء"
+                android:textColor="@color/text_color_blue"
+                android:textSize="16dp"
+                app:strokeColor="@color/text_color_blue"
+                app:strokeWidth="1dp"
+                android:layout_weight="1"
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/reserve_mechanic_details"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:backgroundTint="@color/button_color_blue"
+                android:fontFamily="@font/janna_lt_bold"
+                android:textColor="@color/text_color_white"
+                android:text="نعم، ارسال"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+
+
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

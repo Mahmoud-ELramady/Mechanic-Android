@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/profile_mechanic_fragment"
+    >
+
+    <fragment
+        android:id="@+id/settings_mechanic_fragment"
+        android:name="com.elramady.mechanic.Mechanic.fragmentsDrawer.SettingsMechanicFragment"
+        android:label="الإعدادات"
+        tools:layout="@layout/fragment_settings_mechanic" />
+    <fragment
+        android:id="@+id/done_requests_mechanic_fragment"
+        android:name="com.elramady.mechanic.Mechanic.fragmentsDrawer.DoneRequestsMechanicFragment"
+        android:label="طلبات سابقة تمت"
+        tools:layout="@layout/fragment_done_requests_mechanic" />
+    <fragment
+        android:id="@+id/profile_mechanic_fragment"
+        android:name="com.elramady.mechanic.Mechanic.fragmentsDrawer.ProfileMechanicFragment"
+        android:label="الحساب الشخصى"
+        tools:layout="@layout/fragment_profile_mechanic" />
+    <fragment
+        android:id="@+id/waiting_requests_mechanic_fragment"
+        android:name="com.elramady.mechanic.Mechanic.fragmentsDrawer.WaitingRequestsMechanicFragment"
+        android:label="طلبات فى انتظار الموافقة"
+        tools:layout="@layout/fragment_waiting_requests_mechanic" />
+    <fragment
+        android:id="@+id/current_requests_mechanic_fragment"
+        android:name="com.elramady.mechanic.Mechanic.fragmentsDrawer.CurrentRequestsMechanicFragment"
+        android:label="الطلبات الحالية"
+        tools:layout="@layout/fragment_current_requests_mechanic" />
+</navigation>
